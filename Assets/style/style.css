@@ -126,12 +126,33 @@ main .hero{
     align-items: center;
     justify-content: center;
 }
+main .hero h2{
+    font-family: var(--font1);
+    font-size: 5em;
+    background-color: var(--color3);
+    padding: 2vh;
+    border-radius: 20px;
+    margin: 2vh 0;
+    box-shadow: white 0 0 50px 15px;
+    width: 70%;
+    text-align: center;
+}
+main .hero p{
+    font-family: var(--font2);
+    width: 45%;
+    text-align: justify;
+    text-align-last: center;
+    background-color: var(--color4);
+    padding: 4vh;
+    border-radius: 20px;
+}
 /* Media Queries for Mobile */
 @media only screen and (max-width: 600px) {
     header{
         flex-direction: column;
         justify-content: center;
         padding: 0;
+        position: relative;
     }
     header .heading{
         width: 100%;
@@ -174,6 +195,13 @@ main .hero{
     }
     header .search button{
         width: 25%;
+    }
+    main .hero h2{
+        width: 90%;
+        font-size: 2.5em;
+    }
+    main .hero p{
+        width: 70%;
     }
     header .on{
         display: block;
