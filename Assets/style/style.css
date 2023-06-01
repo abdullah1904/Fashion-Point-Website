@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: #246f98;
+    --color2: #3197ac;
+    --color3: #cecab4;
+    --color4: #d1b446;
+    --font1: 'Oswald', sans-serif;
+    --font2:  'Mulish', sans-serif;
+}
+body{
+    width: 100%;
+}
+/* Main Page */
+header{
+    width: 100%;
+    display: flex;
+    padding: 2vh 0vh;
+    border: 1px solid black;
+}
+header .heading{
+    width: 40%;
+    display: flex;
+}
+header .heading a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+header .heading a h1{
+    font-size: 2.5em;
+    margin-left: 2vh;
+    font-family: var(--font1);
+    color: black;
+}
+header .heading a img{
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 2vh;
+}
+header .heading .hamburgerIcon{
+    width: 8%;
+    margin-right: 2vh;
+    display: none;
+}
+header nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+header ul li{
+    width: 12%;
+    text-align: center;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: var(--font2);
+    color: black;
+}
+header .search{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+header .search input[type="text"]{
+    width: 90%;
+    margin: 1vh 0vh;
+    border: none;
+    border-bottom: 1px solid black;
+}
+header .search input[type="text"]:focus, header .search input[type="text"]:hover{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+header .search button{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 1s ease;
+    font-family: var(--font2);
+}
+header .search button:hover{
+    background-color: black;
+    color: white;
+}
+/* Media Queries for Mobile */
+@media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    header .heading{
+        width: 100%;
+        background-color: var(--color1);
+        padding: 2vh 0;
+    }
+    header .heading a h1{
+        font-size: 1.5em;
+    }
+    header .heading .hamburgerIcon{
+        display: inline-block;
+    }
+    header nav{
+        display: none;
+    }
+    header .on{
+        display: block;
+    }
+    header .search{
+        display: none;
+    }
+}
+/* Media Queries for Tablet */
+@media only screen and (max-width: 768px) {
+    
+}
